@@ -1,0 +1,91 @@
+.notBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+  padding-left: 524px;
+  background-color: #F3F5F7;
+}
+.notBar .content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.notBar .content .discount-offer {
+  display: flex;
+  align-items: center;
+}
+.notBar .content .discount-offer p {
+  color: #343839;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.notBar .content .discount-offer button {
+  color: #377DFF;
+  border: 1px solid #377DFF;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  width: 9.1rem;
+  height: 2.4rem;
+  background-color: transparent;
+}
+.notBar .content .discount-offer button a {
+  color: #377DFF;
+  text-decoration: none;
+}
+.notBar .content .discount-offer .shop-now {
+  margin-left: 12px;
+}
+.notBar .x-icon {
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .notBar {
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0;
+  }
+  .x-icon {
+    justify-content: end;
+    margin-right: 10px;
+  }
+  .content {
+    margin-left: 200px;
+  }
+}
+@media (max-width: 650px) {
+  .notBar {
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0;
+  }
+  .x-icon {
+    justify-content: end;
+  }
+  .content {
+    margin-left: 20px;
+  }
+  .content p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 445px) {
+  .notBar {
+    justify-content: center;
+  }
+  .shop-now {
+    display: none;
+  }
+  .ticket-icon img {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  .x-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}/*# sourceMappingURL=header.css.map */
