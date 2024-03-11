@@ -20,6 +20,143 @@ body {
 .container {
   margin: auto;
   max-width: 1120px;
-  border: 1px solid black;
   margin-top: 18px;
+}
+
+#dialog {
+  width: 343px;
+  height: 812px;
+  position: relative;
+  padding-top: 24px;
+  padding-left: 24px;
+}
+
+#dialog nav {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#dialog button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 25px;
+  color: #6C7275;
+  left: 85%;
+  border-style: none;
+  background-color: transparent;
+  font-size: 30px;
+}
+
+#dialog input {
+  border-style: none;
+  font-size: 2.5rem;
+  width: 60%;
+}
+
+#dialog a {
+  text-decoration: none;
+  color: #141718;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+#dialog li {
+  list-style: none;
+}
+
+#dialog .span1 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 6px;
+}
+
+#dialog .search {
+  border-radius: 5px;
+  border: 1px solid;
+  width: 100%;
+  height: 46px;
+  margin-right: 10px;
+  display: flex;
+}
+
+#dialog img {
+  width: 70px;
+  height: 20px;
+  border-style: none;
+  margin-left: 20px;
+  margin-bottom: -15px;
+}
+
+#dialog ul {
+  margin-top: 16px;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#dialog ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.363);
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+#dialog .basket {
+  margin-top: 100px;
+}
+#dialog .basket p {
+  font-size: 1.8rem;
+  color: #6C7275;
+  font-weight: 500;
+  line-height: 3.2rem;
+  border-bottom: 1px solid #6C7275;
+  width: 100%;
+}
+#dialog .basket img {
+  width: 50px;
+  height: 28px;
+  margin-right: 5px;
+}
+
+#dialog .cart {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#dialog .wishlist {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sign-in p {
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  color: white;
+}
+
+.sign-in {
+  border-radius: 8px;
+  background-color: #141718;
+  color: white;
+  width: 295px;
+  height: 52px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media {
+  width: 100%;
+}
+.social-media img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 295px;
+  height: 24px;
 }/*# sourceMappingURL=global.css.map */

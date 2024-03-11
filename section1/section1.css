@@ -1,19 +1,50 @@
 .section1 {
-  margin-top: 18px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
   min-width: 100%;
   position: relative;
 }
-.section1 img {
-  -o-object-fit: cover;
-     object-fit: cover;
+.section1 .button-scroll {
   width: 100%;
   height: 100%;
   width: 100%;
+  height: 536px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 32px;
+  flex-wrap: wrap;
+}
+.section1 .button-scroll div {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition-duration: 0.3s;
+}
+.section1 .dot-scroll {
+  display: flex;
+  gap: 16px;
+}
+.section1 .dot-scroll .dot-scroll div {
+  border: 1px black;
+  background-color: #141718;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
 }
 
 @media (max-width: 1200px) {
   .container {
     width: 100vw;
+  }
+  .section1 {
+    background-size: auto;
   }
 }
 @media (max-width: 500px) {
@@ -25,6 +56,9 @@
     height: 304px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .section1 {
+    background-size: auto;
   }
 }
 header {
@@ -80,7 +114,11 @@ header p span {
   }
   .rooms img {
     width: 100vw;
+    margin-top: 10px;
     width: 100%;
+  }
+  .section1 {
+    background-size: auto;
   }
 }
 @media (max-width: 510px) {
@@ -91,11 +129,19 @@ header p span {
     height: 80px;
     width: 100%;
   }
+  .rooms {
+    margin-top: -100px;
+  }
+  .scroll-img {
+    width: auto;
+    height: 304px;
+  }
   .header-2 p {
     font-size: 1.1rem;
     width: 300px;
     line-height: 1.5rem;
-    margin-top: 50px;
+    margin-top: 10px;
+    margin-bottom: 0;
   }
   .container {
     display: flex;
@@ -108,6 +154,9 @@ header p span {
     -moz-column-gap: 16px;
          column-gap: 16px;
     margin: auto;
+  }
+  .section1 {
+    background-size: auto;
   }
 }
 .rooms {
@@ -128,4 +177,9 @@ header p span {
     width: 100%;
     margin-top: 10px;
   }
+}
+.button-scroll div:hover span {
+  color: #6C7275;
+  cursor: pointer;
+  font-size: 25px;
 }/*# sourceMappingURL=section1.css.map */
